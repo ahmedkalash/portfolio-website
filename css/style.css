@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em  10em;
+}
+
+.logo {
+    text-decoration: none;
+    color: #45464c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    transition: 0.7s ease;
+}
+
+.navigation a{
+    display: inline-block;
+    margin-left: 2em ;
+    color: #45464c;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: 0.7s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+    color: darkred;
+}
+
+.navigation a:hover {
+    transform: scale(1.1);
+    color: darkred;
+}
+
+
+/* --------------- main --------------- */
+
+
+.main {
+    padding: 268px 170px 570px;
+    min-height: 300px;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    background: url("../images/cat.jpg") no-repeat center;
+}
+
+.name {
+    color: #ffffff;
+    padding-bottom: 15px;
+    font-family: Cantarell, serif;
+}
+
+.job {
+    color: sandybrown;
+    padding-bottom: 15px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.brief {
+    color: navajowhite;
+    padding-bottom: 30px;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.main-btn {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: sandybrown;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 15%;
+    letter-spacing: 2px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color: #ee8121;
+    transform: scale(1.1);
+}
+
+
+.social-icons {
+    margin-top: 20px;
+    padding: 20px;
+}
+.social-icons a {
+    padding-right: 25px;
+    font-size: 30px;
+    color: #45464c;
+}
+
+
+
+/* --------------- services --------------- */
+
+
+
+.services,
+.projects,
+.contact{
+    width: 100%;
+    min-height: 1000px;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5em;
+    color: #ba7204;
+    margin: 50px;
+    padding-top: 70px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    transition:  0.7s ease;
+    margin: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1/20%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.icon {
+    color: #d1821d;
+    font-size: 100px;
+    text-align: center ;
+    margin: 20px;
+}
+
+.info {
+    text-align: center;
+    margin: 10px;
+}
+
+.info h3 {
+    color: #d1821d;
+    text-align: center;
+
+}
+
+.info p {
+    margin: 10px;
+}
+
+.card:hover {
+     transform: scale(1.1);
+}
+
+
+
+
+/* --------------- projects --------------- */
+
+
+
+
+.projects {
+    background-color: #45464c;
+}
+
+.project-card {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px white solid;
+    min-height: 20em;
+    margin: 25px;
+    transition: 0.7s ease;
+    width: calc(33% - 10px); /* Adjust the width and margin as needed */
+    padding-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card .project-image:hover {
+   opacity: 0.9 ;
+}
+
+.project-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h6 {
+    padding-left: 15px ;
+    padding-top: 15px ;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif ;
+    letter-spacing: 1px;
+    padding-bottom: 10px ;
+}
+
+.project-card strong {
+    padding: 15px ;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase ;
+}
+
+
+.project-card strong a {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline;
+    float: right;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #ba7204;
+}
+.project-card strong a:hover {
+    color: red;
+}
+
+
+
+.contact .card .contact-info{
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+
+
+
+
+/* --------------- footer --------------- */
+
+footer {
+    margin-top: 50px;
+    height: 100px;
+    background-color: #45464c;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+footer span{
+    color:sandybrown;
+    font-family: "Bitstream Charter", serif;
+}
+
+footer .social-icons a {
+     color:sandybrown;
+}
+
+
+
+
+
+
+@media (max-width:1023px){
+    
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+        padding-top: 5px;
+        margin-top: 5px;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main h2{
+        font-size: 1em;
+        margin: 1px;
+    }
+
+    .main h1{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:700px){
+    .navigation a{
+        padding: 0;
+        margin-left: 0.8em ;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    body{
+        font-size: 20px;
+    }
+
+    .main {
+        padding: 200px 50px 200px;
+        min-height: 900px;
+        background: url("../images/cat2.png") no-repeat center;
+    }
+    .name {
+        font-size: 20px;
+    }
+
+    
+footer {
+    margin-top: 50px;
+    height: 100px;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer span{
+    display: block;
+}
+
+footer .social-icons a {
+    padding-top: 0;
+    font-size: 15px;
+}
+
+
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px
+    }
+}
